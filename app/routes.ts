@@ -5,5 +5,6 @@ export default [
         "/.well-known/appspecific/com.chrome.devtools.json",
         "pages/debug-null.tsx",
     ),
-    index("routes/home.tsx")
+    index("routes/home.tsx"),
+    route('/auth', 'routes/auth.tsx')
 ] satisfies RouteConfig;
