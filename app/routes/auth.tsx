@@ -1,4 +1,3 @@
-import * as domain from "node:domain";
 import type {Route} from "../../.react-router/types/app/routes/+types/home";
 import {usePuterStore} from "~/lib/puter";
 import {useLocation, useNavigate} from "react-router";
