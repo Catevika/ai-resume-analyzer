@@ -3,7 +3,8 @@ import type {Route} from "../../.react-router/types/app/routes/+types/resume";
 import {usePuterStore} from "~/lib/puter";
 import {useState, useEffect} from "react";
 import Summary from '~/components/Summary';
-
+import ATS from '~/components/ATS';
+import Details from '~/components/Details';
 
 export function meta({}: Route.MetaArgs) {
   return [
