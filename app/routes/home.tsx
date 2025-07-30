@@ -35,7 +35,7 @@ export default function Home() {
       setResumes(parsedResumes || []);
       setLoadingResumes(false);
     };
-    loadResumes();
+    loadResumes().then()
   }, []);
   
   return <main className="bg-[url('/images/bg-main.svg')] bg-cover">
@@ -62,6 +62,11 @@ export default function Home() {
           <Link to="/upload" className="primary-button w-fit text-xl font-semibold">Upload
             Resume</Link>
         </div>}
+      {!loadingResumes && resumes?.length > 0 &&
+        <div className="flex flex-col items-center justify-center gap-4 mt-10">
+        <Link to="/wipe" className="primary-button w-fit text-xl font-semibold">Wipe ALL your
+          Resume analysis</Link>
+      </div>}
     </section>
   </main>;
 }

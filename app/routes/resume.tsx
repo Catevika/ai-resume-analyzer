@@ -49,7 +49,7 @@ const Resume = () => {
       console.log({resumeUrl, imageUrl, feedback: data.feedback });
     }
     
-    loadResume();
+    loadResume().then();
   }, [id]);
   
   return (
