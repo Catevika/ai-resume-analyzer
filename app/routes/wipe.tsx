@@ -48,8 +48,8 @@ const WipeApp = () => {
       </nav>
       <section className="main-section">
         <div className="bg-[url('/images/bg-main.svg')] bg-cover rounded-2xl">
-          <div className="page-heading py-16">
-            <h1>Wipe ALL your Resume analyses</h1>
+          <div className="page-heading py-16 mx-16">
+            <h1  className=''>Wipe ALL your Resume analyses</h1>
             <h2>Authenticated as <span className="font-bold">{auth.user?.username}</span>
             </h2>
           </div>
